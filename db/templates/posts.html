@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список постов</title>
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://kartinki.pics/pics/uploads/posts/2022-08/1661462048_5-kartinkin-net-p-fon-dlya-slaidov-neitralnii-krasivo-5.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Стили для navbar */
+        .navbar {
+            background-color: rgba(0, 0, 255, 0.3);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: red;
+        }
+
+        /* Стили для списка постов */
+        .post-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .post-item {
+            background-color: rgba(0, 0, 255, 0.4);
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+
+        }
+
+        .post-content {
+            font-size: 16px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="/createpost">Добавить пост</a>
+        <a href="/posts">Мои посты</a>
+        <a href="/">Главная страница</a>
+    </div>
+
+    <div class="post-list">
+        <!-- Пример поста -->
+        <div class="post-item">
+            <h2 class="post-title">Заголовок поста</h2>
+            <p class="post-content">Содержание поста. Здесь может быть длинный текст, который описывает содержание поста...</p>
+        </div>
+
+        <!-- Другой пример поста -->
+        <div class="post-item">
+            <h2 class="post-title">Ещё один пост</h2>
+            <p class="post-content">Описание второго поста. Этот пост также может содержать различные детали и информацию...</p>
+        </div>
+
+        <!-- Добавьте больше постов, если нужно -->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!-- create_post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://kartinki.pics/pics/uploads/posts/2022-08/1661462048_5-kartinkin-net-p-fon-dlya-slaidov-neitralnii-krasivo-5.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Стили для navbar */
+        .navbar {
+            background-color: rgba(73, 230, 112, 0.3);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: red;
+        }
+
+        /* Стили для центрирования содержимого */
+        .content {
+            text-align: center;
+            padding-top: 100px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/posts">Мои посты</a>
+        <a href="/">Главная страница</a>
+    </div>
+    <div class="content">
+    
+        <h1>Добро пожаловать в БЛОГ!</h1>
+        <a href="{{ url_for('create_post') }}">Создать пост</a>
+        <h2>Ваши посты:</h2>
+        <ul>
+            {% for post in current_user.posts %}
+                <li>{{ post.title }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Все посты:</h2>
+        <ul>
+            {% for post in all_posts %}
+                <li>{{ post.title }} by {{ post.user.username }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Добро пожаловать на главную страницу!</h1>
+        <p>Здесь можно разместить информацию или описание вашего блога или сайта.</p>
+
+        <h1>Создание поста</h1>
+        <form method="post" action="{{ url_for('create_post') }}">
+            <label for="title">Заголовок:</label>
+            <input type="text" name="title" required><br>
+            <label for="content">Текст:</label>
+            <textarea name="content" rows="4" required></textarea><br>
+            <input type="submit" value="Create Post">
+        </form>
+    </div>
+</body>
+</html>
