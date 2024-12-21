@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0; /* Убираем отступы */
+    font-family: 'Roboto', sans-serif; /* Используем шрифт Roboto */
+    background-color: #f0e68c; /* Пример пастельного оттенка (светло-желтый) */
+    color: #333; /* Цвет текста */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column; /* Устанавливаем направление по колонкам */
+    min-height: 27vh; /* Минимальная высота 100% от высоты окна */
+}
+
+.content {
+    flex: 1; /* Позволяет контенту занимать оставшееся пространство */
+    padding: 10px;
+    /* background-color: #f0e68c; Пример пастельного оттенка (светло-желтый) */
+}
+
+.footer {
+    background-color: #f8f9fa; /* Цвет фона футера */
+    padding: 15px;
+    text-align: center;
+    color: #333;
+}
+
+#errorBlock {
+    display: none; /* Скрываем блок ошибок по умолчанию */
+}
+
+/* Стилизация заголовка */
+h3 {
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+    text-align: center; /* Центрирование заголовка */
+}
+
+/* Стилизация формы */
+.form-group {
+    margin-bottom: 15px; /* Отступ между элементами формы */
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Цвет границы */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 10px; /* Отступ внутри поля ввода */
+    transition: border-color 0.3s; /* Плавный переход цвета границы */
+}
+
+.form-control:focus {
+    border-color: #80bdff; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Тень при фокусе */
+}
+
+/* Стилизация кнопки */
+.btn-success {
+    background-color: #28a745; /* Цвет кнопки */
+    border-color: #28a745; /* Цвет границы кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 5px; /* Закругленные углы кнопки */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Цвет кнопки при наведении */
+    border-color: #1e7e34; /* Цвет границы кнопки при наведении */
+}
+
+/* Стилизация изображения */
+.imageintheright-1 {
+    display: flex; /* Flexbox для центрирования */
+    justify-content: center; /* Центрирование по горизонтали */
+    margin-top: -5px; /* Установите нужное значение */
+}
+
+.imageintheright-1 img {
+    width: 100%; /* Установите ширину картинки в 100% */
+    height: auto; /* Автоматически устанавливает высоту картинки, чтобы сохранить пропорции */
+}
+
+.rounded {
+    margin-top: -10px; /* Установите нужное значение */
+}
+header {
+    background-color: #343a40; /* Темный фон для заголовка */
+}
+
+.nav-link {
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.nav-link:hover {
+    color: #ffc107; /* Цвет при наведении на ссылки */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Цвет кнопки регистрации */
+    border-color: #ffc107; /* Цвет границы кнопки регистрации */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Цвет кнопки при наведении */
+    border-color: #d39e00; /* Цвет границы кнопки при наведении */
+}
+
+.btn-outline-light {
+    color: #fff; /* Цвет текста для кнопки "Войти" */
+    border-color: #fff; /* Цвет границы для кнопки "Войти" */
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Цвет фона при наведении */
+}
+aside {
+    padding: 15px; /* Добавляем отступы для боковой панели */
+}
+
+.bg-warning {
+    background-color: #ffc107; /* Цвет фона для приветствия */
+    border-radius: 5px; /* Закругленные углы для блока приветствия */
+}
+
+.imageintheright-1 {
+    display: flex; /* Flexbox для центрирования */
+    justify-content: center; /* Центрирование по горизонтали */
+    margin-top: 15px; /* Отступ сверху */
+}
+
+.imageintheright-1 img {
+    width: 100%; /* Устанавливаем ширину картинки в 100% */
+    height: auto; /* Автоматически устанавливает высоту картинки, чтобы сохранить пропорции */
+    border-radius: 5px; /* Закругленные углы для изображения */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для изображения */
+}
+/* .author-block {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    background-color: #f0e68c; 
+    margin-bottom: 15px; 
+    border-radius: 10px; 
+*/
+
+.my-btn-11 {
+    background-color: #f0e68c !important; /* Цвет фона кнопки */
+    color: black !important; /* Цвет текста кнопки */
+    padding: 10px 20px !important; /* Внутренние отступы кнопки */
+    text-decoration: none !important; /* Убираем выделение полосой текста */
+    border: none !important; /* Убираем границу, если нужно */
+    border-radius: 5px !important; /* Закругленные углы, если нужно */
+}
+
+h6 {
+    margin: 0; /* Убираем отступы у заголовка */
+    font-weight: bold; /* Делаем заголовок жирным */
+}
+
+p {
+    margin: 0; /* Убираем отступы у параграфов */
+    margin-bottom: 5px; /* Устанавливаем небольшой отступ снизу */
+}
