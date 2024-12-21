@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
-from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 import traceback
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///E:/Python/testTask_blogSite/db/database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////db/database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 # db.init_app(app)
