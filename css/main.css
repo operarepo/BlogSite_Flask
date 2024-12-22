@@ -137,13 +137,6 @@ aside {
     border-radius: 5px; /* Закругленные углы для изображения */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для изображения */
 }
-/* .author-block {
-    padding: 10px;
-    border: 1px solid #ccc; 
-    background-color: #f0e68c; 
-    margin-bottom: 15px; 
-    border-radius: 10px; 
-*/
 
 .my-btn-11 {
     background-color: #f0e68c !important; /* Цвет фона кнопки */
